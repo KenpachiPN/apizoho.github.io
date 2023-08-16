@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------ CSS -------------->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>UNIDROGAS S.A.S</title>
+
+    <!------------ JS -------------->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--==================== CONTACT ====================-->
+    <div id="contact" class="contact-header" data-sr-id="8">
+        <strong class="contact">Contactar a soporte</strong>
+    </div>
+
+    <div class="body-contact contactprime">
+
+
+        <center style="padding-top:15px;padding-bottom:15px;margin-top:20px;margin-bottom:20px; color: #000;">Aquí
+            puedes enviar los inconvenientes o dudas que tengas referentes a tu labor </center>
+
+
+        <div class="wrapper sendus">
+            <header style="text-align:center; color: #fff;"> ¿Cómo podemos ayudarte? </header>
+            <form>
+                <div class="dbl-field">
+                    <div class="field">
+                        <input type="email" name="email_zoho" placeholder="Ingresa tu email">
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="user" placeholder="Nombre Colaborador" disabled>
+                        <i class='fas fa-user'></i>
+                    </div>
+                </div>
+                <div class="dbl-field">
+                    <div class="field">
+                        <input type="text" name="nom_cuenta" placeholder="Nombre de usuario" disabled>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="telf_zoho" placeholder="Telefóno" disabled>
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                </div>
+                <div class="dbl-field">
+                    <div class="field">
+                        <i class='fas fa-building'></i>
+                        <select name="depto">
+                            <option value="val0" class="fa-ul">Empresa</option>
+                            <option value="val1">UNIDROGAS S.A.S</option>
+                            <option value="val2">DROPOPULAR</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <i class='fas fa-bars'></i>
+                        <select name="depto" class="dept">
+                            <option value="val0">Categoria</option>
+                            <option value="val1">Incidencia</option>
+                            <option value="val2">Reimpresión</option>
+                            <option value="val3">Cambio activo</option>
+                            <option value="val4">Giros ya</option>
+                            <option value="val5">Mas por ti</option>
+                            <option value="val6">Permiso sistema</option>
+                            <option value="val7">Creación usuario POS</option>
+                            <option value="val8">Creación usuario ERP</option>
+                            <option value="val9">Creación y/o modificación de perfil</option>
+                            <option value="val10">Creación y/o modificación de correo</option>
+                            <option value="val11">Otros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dbl-field">
+                    <div class="field" id="asunt">
+                        <input type="email" name="copia_corr" placeholder="Copia a">
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                </div>
+                <div class="dbl-field">
+                    <div class="field" id="asunt">
+                        <input type="text" name="asunto_tick" placeholder="Asunto">
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                </div>
+                <div class="message">
+                    <textarea placeholder="Describe brevemente tu problema" name="message"></textarea>
+                    <i class="fa fa-comment"></i>
+                </div> <br>
+                <div class="dbl-field">
+                    <div class="field" id="div_file">
+                        <i class="fa fa-file" style="color: #fff;"></i>
+                        <p id="texto">Añadir archivo</p>
+                        <input type="file" id="file_arch">
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit" style="font-family: ;" class="fa fa-paper-plane"> Enviar el ticket </button>
+                    <span></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--==================== CONTACT ====================-->
+
+</body>
+
+</html>

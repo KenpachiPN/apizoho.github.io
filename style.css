@@ -1,0 +1,425 @@
+ /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav   */
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+ body {
+     box-sizing: border-box;
+     font-family: poppins;
+     background-color: #fff;
+ }
+
+ /*=============== CONTACT ===============*/
+
+
+ .contact__grid {
+     display: grid;
+     gap: 1.5rem;
+ }
+
+ .contact-header {
+    margin-top: 1%;
+     font-size: 2.5rem;
+     text-align: center;
+     color: #bdd543;
+     line-height: 50px;
+ }
+
+ .body__contact {
+     width: 400px;
+     /* height:400px; */
+     height: 250px;
+     background-color: #14CC76;
+     padding: 2.3rem 2.2rem;
+ }
+
+ .icon {
+     width: 28px;
+     margin-right: 0.7rem;
+ }
+
+ .body__contact header {
+     font-size: 22px;
+     font-weight: 600;
+     /* padding: 20px 30px; */
+     color: #fff;
+     list-style: none;
+ }
+
+ .body__contact ul {
+     list-style: none;
+     color: white;
+ }
+
+
+ .body-contact {
+     /* https://codepen.io/team/css-tricks/pen/EKEYob?editors=1100 */
+     display: flex;
+     flex-flow: row wrap;
+     padding: 0 10px;
+     /* min-height: 100vh; */
+     min-height: 80vh;
+     /* background: #14CC76yyy; */
+     align-items: center;
+     justify-content: center;
+ }
+
+ ::selection {
+     color: gray;
+     /* background: #14CC76yyy; */
+ }
+
+ .wrapper {
+     width: 707px;
+     background: #00acec;
+     border-radius: 5px;
+     /* box-shadow: 10px 10px 10px rgba(0,0,0,0.05); */
+     /* box-shadow: 25px 25px 100px rgb(1 1 1 / 14%); */
+     box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+ }
+
+ .wrapper header {
+     font-size: 22px;
+     font-weight: 600;
+     padding: 20px 30px;
+     border-bottom: 1px solid #bdd543;
+ }
+
+ .wrapper form {
+     margin: 35px 30px;
+ }
+
+ .wrapper form.disabled {
+     pointer-events: none;
+     opacity: 0.7;
+ }
+
+ form .dbl-field {
+     display: flex;
+     margin-bottom: 25px;
+     justify-content: space-between;
+ }
+
+ .dbl-field .field {
+     height: 50px;
+     display: flex;
+     position: relative;
+     width: calc(100% / 2 - 13px);
+ }
+
+#asunt, #div_file {
+    width: 100%;
+}
+
+p#texto {
+    margin-top: 16px;
+    padding-left: 50px;
+    text-align: center;
+    color: white;
+}
+
+div#div_file {
+    position: relative;
+    width: 100%;
+    background-color: #bdd543;
+    -webkit-border-radius:5px;
+    -webkit-box-shadow:0px 3px 0px #bdf543;
+    cursor: pointer;
+}
+
+input#file_arch {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+ .wrapper form i {
+     position: absolute;
+     top: 50%;
+     left: 18px;
+     color: #ccc;
+     font-size: 17px;
+     pointer-events: none;
+     transform: translateY(-50%);
+ }
+
+ form .field input,
+ form .message textarea,
+ select {
+     width: 100%;
+     height: 100%;
+     outline: none;
+     padding: 0 18px 0 48px;
+     font-size: 16px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     box-sizing: border-box
+ }
+
+ .field input::placeholder,
+ .message textarea::placeholder {
+     color: #ccc;
+ }
+
+ .field input:focus,
+ .message textarea:focus {
+     padding-left: 47px;
+     border: 2px solid #bdd543;
+ }
+
+ .field input:focus~i,
+ .message textarea:focus~i {
+     color: #bdd543;
+ }
+
+ form .message {
+     position: relative;
+ }
+
+ form .message i {
+     top: 30px;
+     font-size: 20px;
+ }
+
+ form .message textarea {
+     min-height: 130px;
+     max-height: 230px;
+     max-width: 100%;
+     min-width: 100%;
+     padding: 19px 20px 0 48px;
+ }
+
+ form .message textarea::-webkit-scrollbar {
+     width: 0px;
+ }
+
+ .message textarea:focus {
+     padding-top: 14px;
+ }
+
+ form .button-area {
+     /* margin: 25px 0;
+    display: flex;
+    align-items: center; */
+     text-align: center;
+ }
+
+
+ .button-area button {
+     border: none;
+     outline: none;
+     font-size: 18px;
+     width: 200px;
+     height: 45px;
+     border-radius: 20px;
+     /* display: flex; */
+     justify-content: center;
+     /* align-items: center; */
+     color: #ffffff;
+     margin-top: 10px;
+     text-decoration: none;
+     cursor: pointer;
+     padding: 13px 25px;
+     box-shadow: 2px 2px 30px rgb(0 0 0 / 20%);
+     background: #bdd543;
+     transition: background 0.3s ease;
+ }
+
+ .button-area button:hover {
+     background-color: white;
+     transition: all ease 0.3s;
+     color: #bdd543;
+ }
+
+ .button-area span {
+     font-size: 17px;
+     margin-left: 30px;
+     display: none;
+ }
+
+ @media (max-width: 600px) {
+.body__contact {
+         /* height: 200px; */
+     }
+
+     /* .contact-header{
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }   */
+.wrapper {
+         /* border: 1px solid; */
+     }
+
+.wrapper header {
+         text-align: center;
+     }
+.wrapper form {
+         margin: 35px 20px;
+     }
+form .dbl-field {
+         flex-direction: column;
+         margin-bottom: 0px;
+     }
+
+form .dbl-field .field {
+         width: 100%;
+         height: 45px;
+         margin-bottom: 20px;
+     }
+
+form .message textarea {
+         resize: none;
+     }
+
+form .button-area {
+         margin-top: 20px;
+         flex-direction: column;
+     }
+
+     .button-area button {
+         /* width: 100%; */
+         padding: 11px 0;
+         font-size: 16px;
+         width: 180px;
+     }
+
+     .button-area span {
+         margin: 20px 0 0;
+         text-align: center;
+     }
+ }
+
+ .info {
+     display: block;
+ }
+
+ .information {
+     display: flex;
+     color: #fff;
+     margin: 0.7rem 0;
+     align-items: center;
+     font-size: 0.95rem;
+ }
+
+
+ .social-media {
+     /* padding: 2rem 0 0 0; */
+ }
+
+ .social-media p {
+     color: #333;
+ }
+
+ .social-icons {
+     /* https://stackoverflow.com/questions/29580266/align-two-divs-horizontally-one-on-extreme-left-and-the-other-on-extreme-right */
+     display: flex;
+     /* margin-top: 0.5rem; */
+ }
+
+ .social-icons a {
+     width: 35px;
+     height: 35px;
+     border-radius: 5px;
+     background: #fff;
+     color: #14CC76;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 0.5rem;
+     transition: 0.3s;
+ }
+
+ .social-icons a:hover {
+     transform: scale(1.05);
+ }
+
+ /* If the browser window is 600px or smaller, the background color will be lightblue: */
+
+ @media only screen and (max-width: 1222px) {
+
+     .wrapper {
+         width: 515px;
+     }
+
+     /* .body__contact{
+        height: 200px;
+    } */
+
+ }
+
+
+ @media only screen and (max-width: 1022px) {
+
+     .body__contact {
+         padding: 1.3rem 1.2rem;
+     }
+
+     form .field input,
+     form .message textarea {
+         font-size: 11px;
+     }
+
+ }
+
+ @media (max-width: 850px) {
+     /* .social-media {
+        padding: 1.5rem 0 0 0;
+      } */
+ }
+
+ @media only screen and (max-width: 990px) {
+
+     .wrapper {
+         width: 415px;
+     }
+
+ }
+
+ @media (max-width: 480px) {
+
+     .social-media p {
+         font-size: 0.8rem;
+     }
+
+     .social-icons a {
+         width: 30px;
+         height: 30px;
+         line-height: 30px;
+     }
+
+     .icon {
+         width: 23px;
+     }
+ }
+
+ /* If the browser window is 600px or smaller, the background color will be lightblue: */
+
+ @media only screen and (max-width: 600px) {
+
+     .body__contact header {
+         padding: 0px;
+         text-align: center;
+     }
+
+     .body__contact {
+         /* height: 50vh; */
+     }
+
+     .social-media {
+         text-align: center;
+     }
+
+     .social-icons {
+         /* https://stackoverflow.com/questions/29580266/align-two-divs-horizontally-one-on-extreme-left-and-the-other-on-extreme-right */
+         display: flex;
+         /* margin-top: 0.5rem; */
+         justify-content: center;
+     }
+
+
+ }
+
+
+ /*=============== CONTACT ===============*/
